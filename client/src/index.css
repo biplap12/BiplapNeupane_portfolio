@@ -139,6 +139,17 @@ a.active {
     background-color: var(--btn-color);
   }
 }
+@keyframes typing {
+  from { width: 0; }
+  to { width: 30rem; }
+}
+
+.typing-text {
+  overflow: hidden;
+  border-right: .15em solid var(--btn-color); 
+  white-space: nowrap;
+  animation: typing 7s steps(50, end) infinite alternate; 
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -604,7 +615,9 @@ body tr {
       }
     }
   }
+  
 }
+
 
 @media (width <= 798px) {
   html {

@@ -85,7 +85,7 @@ export const Login = () => {
                     <input
                       type="email"
                       name="email"
-                      placeholder="enter your email"
+                      placeholder="Enter your email"
                       id="email"
                       required
                       autoComplete="off"
@@ -99,7 +99,7 @@ export const Login = () => {
                     <input
                       type="password"
                       name="password"
-                      placeholder="password"
+                      placeholder="Password"
                       id="password"
                       required
                       autoComplete="off"

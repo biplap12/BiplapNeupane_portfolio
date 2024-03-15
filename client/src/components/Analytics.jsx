@@ -4,15 +4,15 @@ export const Analytics = () => {
       <section className="section-analytics">
         <div className="container grid grid-four-cols">
           <div className="div1">
-            <h2>50+</h2>
+            <h2>2+</h2>
             <p>registered companies</p>
           </div>
           <div className="div1">
-            <h2>100,00+</h2>
-            <p>Happy Clients</p>
+            <h2>7+</h2>
+            <p>Months Experience</p>
           </div>
           <div className="div1">
-            <h2>500+</h2>
+            <h2>50+</h2>
             <p>Well known Developers</p>
           </div>
           <div className="div1">

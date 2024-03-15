@@ -58,7 +58,7 @@ export const AdminUsers = () => {
           <table>
             <thead>
               <tr>
-                <th>Name</th>
+                <th>UserName</th>
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Update</th>

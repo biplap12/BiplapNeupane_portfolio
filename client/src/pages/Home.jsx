@@ -7,14 +7,13 @@ export const Home = () => {
         <section className="section-hero">
           <div className="container grid grid-two-cols">
             <div className="hero-content">
-              <p>We are the World Best IT Company</p>
-              <h1>Welcome to Biplap Neupane</h1>
+            <p className="typing-text">I am a full-stack web developer.</p>
+              <h1>Hey! I am  <span style={{color:"#646cff"}} >
+              Biplap 
+              </span> Neupane🙏.</h1>
               <p>
-                Are you ready to take your business to the next level with
-                cutting-edge IT solutions? Look no further! At Biplap Neupane,
-                we specialize in providing innovative IT services and solutions
-                tailored to meet your unique needs.
-              </p>
+              I&apos;m a full stack web developer. I have experience in HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and more.</p>
+
               <div className="btn btn-group">
                 <a href="/contact">
                   <button className="btn">connect now</button>
@@ -28,7 +27,7 @@ export const Home = () => {
             {/* hero images  */}
             <div className="hero-image">
               <img
-                src="/images/home.png"
+                src="/images/profile.png"
                 alt="coding together"
                 width="400"
                 height="500"
@@ -55,14 +54,10 @@ export const Home = () => {
           </div>
 
           <div className="hero-content">
-            <p>We are here to help you</p>
+            <p>I am here to help you. </p>
             <h1>Get Started Today</h1>
             <p>
-              Ready to take the first step towards a more efficient and secure
-              IT infrastructure? Contact us today for a free consultation and
-              lets discuss how Biplap Neupane can help your business thrive in
-              the digital age.
-            </p>
+            I am here to help you. I am an experienced developer. We provide services like web development, mobile app development, and more.</p>
             <div className="btn btn-group">
               <a href="/contact">
                 <button className="btn">connect now</button>

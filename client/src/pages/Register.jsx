@@ -86,7 +86,7 @@ export const Register = () => {
                     <input
                       type="text"
                       name="username"
-                      placeholder="username"
+                      placeholder="Username"
                       id="username"
                       required
                       autoComplete="off"
@@ -100,7 +100,7 @@ export const Register = () => {
                     <input
                       type="email"
                       name="email"
-                      placeholder="enter your email"
+                      placeholder="Email"
                       id="email"
                       required
                       autoComplete="off"
@@ -113,7 +113,7 @@ export const Register = () => {
                     <input
                       type="number"
                       name="phone"
-                      placeholder="phone"
+                      placeholder="Phone"
                       id="phone"
                       required
                       autoComplete="off"
@@ -127,7 +127,7 @@ export const Register = () => {
                     <input
                       type="password"
                       name="password"
-                      placeholder="password"
+                      placeholder="Password"
                       id="password"
                       required
                       autoComplete="off"

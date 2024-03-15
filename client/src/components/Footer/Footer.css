@@ -3,4 +3,14 @@ footer {
   text-align: center;
   background-color: var(--btn-color);
   margin-top: auto;
+  color: var(--bg-color);
+
+}
+.footerNavlink{
+  color: var(--bg-color);
+  text-decoration: none;
+}
+.footerNavlink:hover{
+  color: var(--bg-color);
+  text-decoration: underline;
 }

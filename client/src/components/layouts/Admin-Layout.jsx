@@ -21,9 +21,14 @@ export const AdminLayout = () => {
         <div className="container">
           <nav>
             <ul>
+            <li>
+                <NavLink to="/">
+                  <FaHome /> Home
+                </NavLink>
+              </li>
               <li>
                 <NavLink to="/admin/users">
-                  <FaUser /> users
+                  <FaUser /> Users
                 </NavLink>
               </li>
               <li>
@@ -34,12 +39,6 @@ export const AdminLayout = () => {
               <li>
                 <NavLink to="/service">
                   <FaRegListAlt /> Services
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink to="/">
-                  <FaHome /> Home
                 </NavLink>
               </li>
             </ul>
