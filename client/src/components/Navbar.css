@@ -9,3 +9,70 @@ ul {
   display: flex;
   gap: 3.2rem;
 }
+.menu-icon{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 4.2rem 1.6rem;
+  }
+
+  ul {
+    gap: 2.4rem;
+  }
+  li>a {
+    font-size: 2rem;
+  }
+
+  .logo-brand {
+    font-size: 2.4rem;
+  }
+  .menu-icon{
+    display: none;
+  }
+
+
+  
+}
+
+@media screen and (max-width: 600px){
+  .container {
+    padding: 4.2rem 1.6rem;
+  }
+ /* nav>ul>li>a {
+    display: none;
+  } */
+  nav>ul{
+    display: block;
+    top: 4rem;    
+  }
+  .show{
+    display: block;
+  }
+  .hide{
+    display: none;
+  }
+  .menu-icon {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: right;
+    cursor: pointer;
+  }
+ 
+  .hamicon{
+    display: block;
+  }
+ .cross-icon {
+    /* display: none; */
+    margin-top: .5rem;
+    font-size: 2rem;
+  }
+   
+  .menu-icon:hover {
+    color: #f1356d;
+  }
+  
+}

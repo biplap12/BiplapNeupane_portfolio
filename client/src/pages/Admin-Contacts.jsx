@@ -55,7 +55,7 @@ export const AdminContacts = () => {
         <div className="container">
           <h1>Admin Contact Data </h1>
         </div>
-        <div className="container  admin-users">
+        <div className="container admin-users">
           <table>
             <thead>
               <tr>
