@@ -197,7 +197,6 @@ a.active {
 
 .section-analytics {
   margin: 9.6rem 0;
-
   & .container {
     background-color: var(--bg-color);
     border-radius: 1rem;

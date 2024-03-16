@@ -1,32 +1,30 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import { useAuth } from "../store/auth";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { ImCross } from "react-icons/im";
-import { useEffect, useState } from "react";
+import { useAuth } from "../store/auth";
+import { useState, useEffect } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  
-  useEffect(() => {
-    const screenWidth = window.innerWidth;
-    setIsMenuOpen(screenWidth < 600);
-    if (screenWidth > 600){
-    setIsMenuOpen(screenWidth > 600);
-    setIsMenuOpen(true);
-    }
-    else{
-      setIsMenuOpen(screenWidth < 600);
-      setIsMenuOpen(false);
-    }
-    setIsMenuOpen(screenWidth > 600);
-  }, []);
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+      let windowWidth = window.innerWidth;
+      if ( windowWidth < 600) {
+        setIsOpen(false);
+      } else {
+        setIsOpen(false);
+      }
+      if (windowWidth > 600) {
+        setIsOpen(true);
+      }else{
+        setIsOpen(false);
+      }    
+  }, []);
 
   const { isLoggedIn, user } = useAuth();
 
@@ -48,7 +46,7 @@ export const Navbar = () => {
           </div>
 
           <nav>
-            <ul className={isMenuOpen ? "show" :"" }>
+            <ul className={isOpen ? "show" : ""}>
               <li className="menu-icon" onClick={toggleMenu}>
                 {isOpen ? (
                   <ImCross className="cross-icon" />
@@ -56,12 +54,12 @@ export const Navbar = () => {
                   <CgMenuRightAlt className="hamicon" />
                 )}
               </li>
-              {!isMenuOpen || (
+              {isOpen && (
                 <>
                   <li>
                     <NavLink to="/"> Home </NavLink>
                   </li>
-                  <li>
+                 <li>
                     <NavLink to="/about"> About </NavLink>
                   </li>
                   <li>

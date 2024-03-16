@@ -12,6 +12,11 @@ ul {
 .menu-icon{
   display: none;
 }
+li>a {
+  font-size: 2.2rem;
+  color: #646cff;
+  transition: all 0.3s ease;
+}
 
 @media screen and (max-width: 768px) {
   .container {
@@ -37,21 +42,39 @@ ul {
 }
 
 @media screen and (max-width: 600px){
-  .container {
-    padding: 4.2rem 1.6rem;
+  nav > ul > li :first-child{
+    color: #646cff;
   }
- /* nav>ul>li>a {
-    display: none;
-  } */
-  nav>ul{
-    display: block;
-    top: 4rem;    
+nav > ul > li > a {
+  display: inline-block;
+  padding: 1.6rem 0;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+nav > ul {
+  display: block;
+  position: relative;
+  padding: 0 5rem;
+  width: fit-content;
+  transition: all 0.9s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+    color: #f1356d;
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);    
+  }
+}
+
+
   .show{
     display: block;
-  }
-  .hide{
-    display: none;
   }
   .menu-icon {
     font-size: 3rem;
@@ -60,15 +83,17 @@ ul {
     align-items: center;
     justify-items: right;
     cursor: pointer;
+    position: absolute;
+    right: 0rem;
   }
- 
+  
   .hamicon{
     display: block;
+    color: #646cff;
   }
  .cross-icon {
-    /* display: none; */
-    margin-top: .5rem;
     font-size: 2rem;
+
   }
    
   .menu-icon:hover {
