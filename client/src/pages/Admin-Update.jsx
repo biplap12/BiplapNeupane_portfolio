@@ -31,7 +31,8 @@ export const AdminUpdate = () => {
       //     getAllUsersData();
       //   }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
+      toast.error("Not Updated ");
     }
   };
 
@@ -72,7 +73,8 @@ export const AdminUpdate = () => {
         toast.error("Not Updated ");
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
+      toast.error("Not Updated ");
     }
   };
 

@@ -20,7 +20,8 @@ export const AdminUsers = () => {
       // console.log(`users ${data}`);
       setUsers(data);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
+      toast.error("Something went wrong");
     }
   };
 

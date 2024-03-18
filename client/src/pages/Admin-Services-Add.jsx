@@ -1,9 +1,10 @@
+
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { useAuth } from "../store/auth";
 
 const AdminServicesAdd = () => {
-  const {API } = useAuth();
+  const {API} = useAuth();
 
      const [service, setservice] = useState({
     service: "",
@@ -20,7 +21,6 @@ const AdminServicesAdd = () => {
     const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      
       const response = await fetch(`${API}/api/data/addService`, {
         method: "POST",
         headers: {
@@ -57,7 +57,7 @@ const AdminServicesAdd = () => {
             <img src="/images/design.png" alt="services" />
           </div>
           <section className="section-form">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} encType="multipart/form-data">
               <div>
                 <label htmlFor="service">Service</label>
                 <input
@@ -115,6 +115,7 @@ const AdminServicesAdd = () => {
               <input
                 type="file"
                 name="image"
+                placeholder="Upload Image Here"
                 id="image"
                 autoComplete="off"
                 required
