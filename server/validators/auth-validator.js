@@ -28,4 +28,35 @@ const signupSchema = loginSchema.extend({
     .max(20, { message: "Phone must not be more than 20 characters" }),
 });
 
-module.exports = { signupSchema, loginSchema };
+const serviceSchema = z.object({
+  service: z
+    .string({ required_error: "Service is required" })
+    .trim()
+    .min(3, { message: "Service must be at least of 3 characters" })
+    .max(255, { message: "Service must not be more than 255 characters" })
+    .regex(/^[a-zA-Z\s]*$/, {
+      message: "Service must contain only letters and spaces",
+    }),
+  price: z
+    .string({ required_error: "Price is required" })
+    .trim()
+    // Price must be in the format 10.00-20.00
+    .regex(/^\d+\.\d+-\d+\.\d+$/, {
+      message: "Price must be in the format 10.00-20.00",
+    })
+    .max(255, { message: "Price must not be more than 255 characters" }),
+  provider: z
+    .string({ required_error: "Provider is required" })
+    .trim()
+    .min(3, { message: "Provider must be at least of 3 characters" })
+    .max(255, { message: "Provider must not be more than 255 characters" }),
+  description: z
+    .string({ required_error: "Description is required" })
+    .trim()
+    .min(3, { message: "Description must be at least of 3 characters" })
+    .max(255, { message: "Description must not be more than 255 characters" }),
+});
+
+
+
+module.exports = { signupSchema, loginSchema, serviceSchema};

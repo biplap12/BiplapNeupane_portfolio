@@ -10,7 +10,7 @@ const home = async (req, res) => {
     res
       .status(200)
       .send(
-        "Welcome to world best mern series by thapa technical using router "
+        "Welcome to world best mern series by Biplap Neuapne using router "
       );
   } catch (error) {
     console.log(error);
@@ -53,7 +53,7 @@ const register = async (req, res) => {
     });
 
     res.status(201).json({
-      msg: "registration successful",
+      message: "registration successful",
       token: await userCreated.generateToken(),
       userId: userCreated._id.toString(),
     });

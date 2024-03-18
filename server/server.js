@@ -8,6 +8,8 @@ const serviceRoute = require("./router/service-router");
 const adminRoute = require("./router/admin-router");
 const connectDb = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
+const multer  = require('multer')
+const upload = multer({ dest: 'uploads/' })
 
 // let's tackle cors
 const corsOptions = {
@@ -35,7 +37,6 @@ app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/form", contactRoute);
 app.use("/api/data", serviceRoute);
-
 // let's define admin route
 app.use("/api/admin", adminRoute);
 
