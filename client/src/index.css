@@ -158,7 +158,7 @@ a.active {
   :root {
     color: #213547;
     /* background-color: #ffffff; */
-    background-color: var(--helper-color);
+    background-color: #cedbf6;
   }
   a:hover,
   a.active {
