@@ -1,7 +1,10 @@
 import { Analytics } from "../components/Analytics";
+import { useAuth } from "../store/auth";
 
 export const Home = () => {
-  return (
+  const { user } = useAuth();
+
+ return (
     <>
       <main>
         <section className="section-hero">
@@ -54,11 +57,12 @@ export const Home = () => {
           </div>
 
           <div className="hero-content">
-            <p>I am here to help you. </p>
-            <h1>Get Started Today</h1>
-            <p>
-            I am here to help you. I am an experienced developer. We provide services like web development, mobile app development, and more.</p>
-            <div className="btn btn-group">
+          <p>How can I assist you today?</p>
+          <h1>Let's Build Something Great Together</h1>
+          <p>Hello  {user.username ? <span className="username">{user.username}!! </span> : "there!"}
+          I'm here to turn your ideas into reality. As an experienced developer, I specialize in web development and IT services.</p>
+          <p>Whether you need a stunning website, IT consulting, or other IT services, I've got the skills and expertise to bring your vision to life.</p>
+          <div className="btn btn-group">
               <a href="/contact">
                 <button className="btn">connect now</button>
               </a>
