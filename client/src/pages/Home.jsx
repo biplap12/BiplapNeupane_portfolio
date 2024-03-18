@@ -59,7 +59,7 @@ export const Home = () => {
           <div className="hero-content">
           <p>How can I assist you today?</p>
           <h1>Let's Build Something Great Together</h1>
-          <p>Hello  {user.username ? <span className="username">{user.username}!! </span> : "there!"}
+          <p>Hello  {user.username ? <span className="username">{user.username} ! </span> : "there! "}
           I'm here to turn your ideas into reality. As an experienced developer, I specialize in web development and IT services.</p>
           <p>Whether you need a stunning website, IT consulting, or other IT services, I've got the skills and expertise to bring your vision to life.</p>
           <div className="btn btn-group">

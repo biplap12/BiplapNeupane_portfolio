@@ -327,7 +327,12 @@ a.active {
   text-transform: uppercase;
   font-size: 2rem;
 }
+.username{
+  color: var(--btn-color);
+  font-weight: bold;
+  font-family: cursive;
 
+}
 .content .btns {
   margin: 25px 0;
   display: inline-flex;
