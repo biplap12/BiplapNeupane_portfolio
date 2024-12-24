@@ -113,6 +113,10 @@ export const Login = () => {
                     Login
                   </button>
                 </form>
+                 <p style={{ marginTop:'3rem' }}>
+                  Don’t Have An Account?
+                  <NavLink to="/register">Register</NavLink>
+                </p>
               </div>
             </div>
           </div>
