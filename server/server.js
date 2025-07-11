@@ -20,7 +20,8 @@ const corsOptions = {
       "http://localhost:5173",
       "http://localhost:4173",
       "https://biplapneupane.onrender.com",
-      "https://biplap-neupane.vercel.app"
+      "https://biplap-neupane.vercel.app",
+      "https://bp.biplapneupane.com.np"
     ];
     const isAllowed = allowedOrigins.includes(origin);
     callback(null, isAllowed ? origin : false);
